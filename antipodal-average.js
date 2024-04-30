@@ -16,7 +16,7 @@ function processArray(arr) {
     let midpoint = Math.floor(length / 2);
 
     // Reviso si no es divisible en 2 partes iguales exactas.
-    if (length / 2 !== 0) {
+    if (length % 2 !== 0) {
         // Le quito el elemento de enmedio.
         arr.splice(midpoint, 1);
     }
